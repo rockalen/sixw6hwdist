@@ -57,11 +57,18 @@ $(document).ready(function () {
         $('.arrow-down').toggleClass('arrow-active')   
     })
 
-     // checkout單元arrow_down icon 切換180度
+    // checkout單元arrow_down icon 切換180度
      $('.pay-list-btn').click(function (e) {
         // 取消預設 event 事件
         e.preventDefault();       
         $('.pay-list-arrow_down').toggleClass('arrow-active')   
+    })
+
+    // checkout information單元arrow_down icon 切換180度
+    $('.info-btn').click(function (e) {
+        // 取消預設 event 事件
+        e.preventDefault();       
+        $('.info-arrow').toggleClass('arrow-active')   
     })
 
     $('.navbar-btn').click(function (e) {
