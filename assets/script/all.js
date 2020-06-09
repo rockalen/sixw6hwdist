@@ -18,7 +18,7 @@ $(document).ready(function () {
     
 
     // 產品頁
-    if(pageURL == '/product.html'){
+    if(title == '產品頁'){
         // 設定標題主色粗體
         $("#sub-menu-item > li:first-child > a").addClass("text-main").addClass("font-weight-bold");
         // in second page clone to sub menu    
