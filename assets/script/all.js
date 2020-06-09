@@ -14,7 +14,7 @@ $(document).ready(function () {
     // let age = parseInt(params.get('age')); // is the number 18
     var title = $(this).attr('title');
     console.log(title);
-
+    console.log(pageURL);
     
 
     // 產品頁
