@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>產品頁</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/style/all.css">
+        <!-- 載入 jQuery 核心 -->
+        <!-- <script src="./assets/script/jquery.min.js"></script> -->
+        <!-- 載入 jQuery bootstrap 核心 -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <!-- 網站 all.js -->
+        <script src="./assets/script/all.js"></script>
+        <!-- 引入共同變數及資料 -->
+        
+    </head>
+<body>
+    <header>
+               
+            <nav class="navbar navbar-expand-lg bg-transparent navbar-light px-15 w-100" >
+                <div class="container"> 
+                <button class="navbar-btn navbar-toggler p-0 border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <div class="toggle-menu">
+                        <div class="line line1 bg-dark"></div>
+                        <div class="line line2 bg-dark"></div>
+                        <div class="line line3 bg-dark"></div>
+                    </div>
+                </button>
+                <a class="navbar-brand logo text-md-dark mr-0" href="index.html">Craftsman</a>
+                <a class="navbar-cart nav-link text-dark px-0 order-md-3 material-icons" href="#">                   
+                    shopping_cart                    
+                </a>
+                <div class="nav-bar collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-md-center flex-column flex-md-row font-size-24 font-size-md-16">
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li> -->
+                    <li class="nav-item mr-md-7 pb-3 py-md-0">
+                        <!-- <div class="nav-product-item d-flex justify-content-between"> -->
+                            <a class="nav-link p-0 d-none d-md-flex text-main font-weight-bold" href="#">Product</a>
+                            <a class="sub-menu-btn nav-link p-0  text-md-down-dark d-md-none d-flex justify-content-between" data-toggle="collapse" href="#collapseSubMenu" role="button" aria-expanded="false" aria-controls="collapseSubMenu">
+                              <span>Product</span><i class="material-icons arrow-down py-2">  keyboard_arrow_down</i>
+                            </a>
+                        <!-- </div> -->
+                        
+                        <div class="sub-menu collapse bg-white mt-3" id="collapseSubMenu">
+    <ul class="list-unstyled sub-menu-item text-capitalize" id="sub-menu-item">
+        <li class="border-0 font-size-16 font-size-md-24 my-3">
+            <a href="product.html">all<sup>24</sup></a>
+        </li>
+        <li class="border-0 font-size-16 font-size-md-24 my-3">
+            <a href="#">bowl<sup>10</sup></a>
+        </li>
+        <li class="border-0 font-size-16 font-size-md-24 my-3">
+            <a href="#">cup<sup>8</sup></a>
+        </li>
+        <li class="border-0 font-size-16 font-size-md-24 my-3">
+            <a href="#">plate<sup>3</sup></a>
+        </li>
+        <li class="border-0 font-size-16 font-size-md-24 mt-3">
+            <a href="#">vase<sup>3</sup></a>
+        </li>
+    </ul>
+</div>  
+                    </li>
+                    <li class="nav-item mr-7 py-3 py-md-0">
+                        <a class="nav-link p-0 text-md-down-dark" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item mr-7 py-3 py-md-0">
+                        <a class="nav-link p-0 text-md-down-dark" href="#">Contact</a>
+                    </li>               
+                  
+                    </ul>
+                </div>
+                
+               </div>   
+            </nav>
+            
+            <div class="static-sub-menu container-fluid mb-4 mb-md-7" id="staticSubMenu">
+
+            </div>
+            
+    </header>
+    <main>
+        <!-- 主要內容開始 -->
+        
+<section class="container">
+    <div class="card-columns mb-5">
+      <div class="row row-small-gutter justify-content-between product-item">
+       <div class="product-item01 card border-0 col-6 col-md-12">
+          <a class="p-0" href="product-detail.html">
+            <img src="./assets/images/img-1.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay p-3">
+              <p class="card-text text-right text-white font-size-14 text-capitalize">on sale</p>
+            </div>
+            <div class="card-body text-left p-0 pt-1">
+              <h5 class="card-title mb-1 text-capitalize font-size-md-24">Tatami Cup</h5>
+              <p class="card-text font-size-16">NT$1,080<del class="text-black-50 ml-2">NT$1,200</del></p>
+              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </div>
+          </a>
+        </div>
+        <div class="card border-0 col-6 col-md-12 order-md-4">
+          <img src="./assets/images/img-5.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay p-3">
+            <p class="card-text text-right text-white font-size-14 text-capitalize">on sale</p>
+          </div>
+          <div class="card-body text-left p-0 pt-1">
+            <h5 class="card-title mb-1 text-capitalize font-size-md-24">Hana Vase</h5>
+            <p class="card-text font-size-16">NT$3,600
+              <del class="text-black-50 ml-2">NT$3,880</del>
+            </p>            
+          </div>
+        </div>
+        <div class="card border-0 col-6 col-md-12 order-md-7">
+          <img src="./assets/images/img-4.jpg" class="card-img" alt="...">
+          <div class="card-img-overlay p-3">
+            <p class="card-text text-right text-white font-size-14 text-capitalize">on sale</p>
+          </div>
+          <div class="card-body text-left p-0 pt-1">
+            <h5 class="card-title mb-1 text-capitalize font-size-md-24">Baifan Bowl</h5>
+            <p class="card-text font-size-16">NT$1,800
+              <del class="text-black-50 ml-2">NT$1,980</del>
+            </p>            
+          </div>
+        </div>
+        <div class="card border-0  col-6 col-md-12 order-md-2">
+          <img src="./assets/images/img-6.jpg" class="card-img" alt="...">
+          <div class="card-body text-left p-0 pt-1">
+            <h5 class="card-title mb-1 text-capitalize font-size-md-24">Limdae Cup</h5>
+            <p class="card-text font-size-16">NT$2,800
+              <!-- <del class="text-black-50 ml-2">NT$1,200</del> -->
+            </p>            
+          </div>
+        </div>
+              
+              <!--  -->
+           
+        <div class="card border-0 col-6 col-md-12 order-md-5">
+          <img src="./assets/images/img-3.jpg" class="card-img" alt="...">
+          <div class="card-body text-left p-0 pt-1">
+            <h5 class="card-title mb-1 text-capitalize font-size-md-24">Sumo Vase</h5>
+            <p class="card-text font-size-16">NT$4,800
+              <!-- <del class="text-black-50 ml-2">NT$1,200</del> -->
+            </p>            
+          </div>
+        </div>          
+        <div class="card border-0 col-6 col-md-12 order-md-8">
+            <img src="./assets/images/img-7.jpg" class="card-img" alt="...">
+            <div class="card-body text-left p-0 pt-1">
+              <h5 class="card-title mb-1 text-capitalize font-size-md-24">Ceramic Vase</h5>
+              <p class="card-text font-size-16">NT$2,800
+                <!-- <del class="text-black-50 ml-2">NT$1,200</del> -->
+              </p>            
+            </div>
+        </div>
+        <div class="card border-0 col-6 col-md-12 order-md-3">
+          <img src="./assets/images/img-8.jpg" class="card-img" alt="...">
+          <div class="card-body text-left p-0 pt-1">
+            <h5 class="card-title mb-1 text-capitalize font-size-md-24">Kabi Mug</h5>
+            <p class="card-text font-size-16">NT$2,800
+              <!-- <del class="text-black-50 ml-2">NT$1,200</del> -->
+            </p>            
+          </div>
+        </div>
+        <div class="card border-0 col-6 col-md-12 order-md-6">
+          <img src="./assets/images/img-9.jpg" class="card-img" alt="...">
+          <div class="card-body text-left p-0 pt-1">
+            <h5 class="card-title mb-1 text-capitalize font-size-md-24">Shiro Plate</h5>
+            <p class="card-text font-size-16">NT$2,800
+              <!-- <del class="text-black-50 ml-2">NT$1,200</del> -->
+            </p>            
+          </div>
+        </div>
+        <div class="card border-0 d-none d-md-block col-6 col-md-12 order-md-9">
+            <img src="./assets/images/img-2.jpg" class="card-img" alt="...">
+            <div class="card-body text-left p-0 pt-1">
+              <h5 class="card-title mb-1 text-capitalize font-size-md-24">couple Collection</h5>
+              <p class="card-text font-size-16">NT$2,800
+                <!-- <del class="text-black-50 ml-2">NT$1,200</del> -->
+              </p>            
+            </div>
+        </div>
+      </div>
+    </div>
+    <nav aria-label="pagination">
+      <ul class="pagination justify-content-center font-size-24 mb-7">
+        <li class="page-item disabled font-weight-bold">
+          <a class="page-link border-0 px-3" href="#" tabindex="-1"><u>1</u></a>
+        </li>
+        <li class="page-item"><a class="page-link border-0 px-3" href="#">2</a></li>
+        <li class="page-item"><a class="page-link border-0 px-3" href="#">3</a></li>
+      </ul>
+    </nav>
+</section>
+        <!-- 主要內容結束 -->
+        
+    </main>
+    <footer>
+        <section class="container-fluid footer-bg footer-md-bg ">
+            <div class="row">
+                <div class="col-12 footer-bg-cover">
+                </div>
+            </div>
+            <div class="container h-100 px-0 d-flex flex-column  justify-content-center px-md-gutter">
+                <div class="row mb-4 mb-md-7">
+                    <div class="col-xl-5 h-100 text-white">
+                        <h2 class="font-size-32 font-size-md-48">Subscribe for news and special offers!</h2>                                          
+                    </div>
+                </div>
+                <form class="my-2 my-lg-0">
+                    <div class="row no-gutters">                        
+                        <div class="col-8 col-md-3">                            
+                            <input class="form-control form-control-lg mr-0 w-100 bg-transparent border-right-0" type="search" placeholder="Your email address" aria-label="Search">  
+                        </div>
+                        <div class="col-4 col-md-2">
+                            <button class="btn btn-main btn-lg w-100" type="submit">Subscribe</button>                            
+                        </div>                    
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+        <section class="bg-dark">
+            <nav class="container d-md-flex bg-dark navbar-dark py-md-5 font-size-14">
+                <a class="logo nav-link text-white mr-3 pt-4 pt-md-0 px-0 mb-6 mb-md-0" href="#">Craftsman</a>
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="d-md-flex flex-md-row-reverse justify-content-between align-items-center w-100">
+                
+                <!-- <div class="d-flex justify-content-end" id="navbarFooter"></div> -->
+                    <ul class="nav flex-column flex-md-row mb-7 mb-md-0">                  
+                        <li class="nav-item mr-5 mb-3 mb-md-0">
+                            <a class="nav-link p-0 text-white-50" href="#">Purchase Policy</a>
+                        </li>
+                        <li class="nav-item mr-5 mb-3 mb-md-0">
+                            <a class="nav-link p-0 text-white-50" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0 text-white-50" href="#">Terms & Conditions</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link p-0" href="#">
+                                <span class="material-icons">
+                                shopping_cart
+                                </span>
+                            </a>
+                        </li>                   -->
+                    </ul>
+                <!-- </div> -->
+                <p class="h7 text-white-50 mb-0 pb-4 pb-md-0">© 2020. All Rights Reserved.</p>
+                </div>
+            </nav>
+        </section>
+    </footer>
+    <!-- 載入Swiper JS -->
+    <link rel="stylesheet" href="./assets/style/swiper.min.css">
+    <script src="./assets/script/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        
+            slidesPerView: 1.46,
+            spaceBetween: 16,
+            slidesOffsetBefore : 15,
+            
+	        //height: 300,//你的slide高度
+            centeredSlides: false,
+            
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // 設定斷點
+            breakpoints: {
+            640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            },
+            768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            },
+            1024: {
+            // slidesOffsetBefore : 89,
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+            },
+            1280: {
+            slidesOffsetBefore : 89,
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+            },
+            }
+        });
+    </script>
+
+    <!-- W7HW 載入AOS & Animate  -->
+    <style>            
+        [data-aos] {
+            visibility: hidden;
+        }
+    
+        [data-aos].animate__animated {
+            visibility: visible;
+        }
+        /* This changes all the animations globaly */
+    :root {
+      --animate-duration: 1800ms;
+      --animation-delay: 2.9s;
+    }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+                useClassNames: true,
+                initClassName: false,
+                animatedClassName: 'animate__animated'
+                // animatedClassName: 'animated',
+            });
+    </script>    
+</body>
+</html>

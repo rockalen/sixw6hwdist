@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>產品付款</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/style/all.css">
+        <!-- 載入 jQuery 核心 -->
+        <!-- <script src="./assets/script/jquery.min.js"></script> -->
+        <!-- 載入 jQuery bootstrap 核心 -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <!-- 網站 all.js -->
+        <script src="./assets/script/all.js"></script>
+        <!-- 引入共同變數及資料 -->
+        
+    </head>
+<body>
+    <header>
+               
+            <nav class="navbar navbar-expand-lg bg-transparent navbar-light px-15 w-100" >
+                <div class="container">
+                
+                <!-- 商家LOGO -->
+                <div class="row justify-content-center w-100">
+                    <div class="col-12 col-md-10">
+                        <a class="navbar-brand logo text-md-dark mr-0" href="index.html">Craftsman</a>
+                    </div>
+                </div>
+                
+               </div>   
+            </nav>
+            
+    </header>
+    <main>
+        <!-- 主要內容開始 -->
+        <section class="content container">
+    <!-- pay list button -->
+    <div class="row justify-content-center">
+        <div class="col-12 d-md-none">
+            <a class="pay-list-btn btn btn-sec-2 btn-lg d-flex d-md-none justify-content-between align-items-center" data-toggle="collapse" href="#collapse-pay-list" role="button" aria-expanded="true" aria-controls="collapse-pay-list">
+                
+                    <p class="mb-0">Order Summary</p>
+                    <p class="mb-0 font-weight-bold">
+                        NT$4,760
+                        <span class="pay-list-arrow_down material-icons align-middle text-main">
+                            keyboard_arrow_down
+                        </span>
+                    </p>
+             </a>
+        </div>
+    </div>     
+    <!-- 產品付款主要內容 -->
+    <div class="row flex-column-reverse flex-md-row justify-content-center">
+        <!-- pay 麵包屑 -->
+        <div class="col-12 col-md-10 order-1 order-md-1 mt-4 mt-md-0">            
+            <nav aria-label="breadcrumb" class="path-icon">
+                <ol class="breadcrumb bg-transparent p-0">
+                <li class="breadcrumb-item"><a href="#" class="text-main">Cart</a></li>
+                <li class="breadcrumb-item"><a href="#" class="font-weight-bold">Information</a></li>
+                <li class="breadcrumb-item active" aria-current="page">PaymentHome</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- pay form表單 -->
+        <div class="col-12 col-md-6 order-md-2">           
+            <form>
+                <h5 class="Shipping-addr">Contact information</h5>
+                <div class="form-group mb-2">
+                  <!-- <label for="InputEmail1">Contact information</label> -->
+                  <input type="email" class="form-control form-control-lg" id="InputEmail1" aria-describedby="emailHelp" placeholder="Email">                  
+                </div>
+                <!-- <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div> -->
+                
+                <!-- <div class="checkBoxArea cursor-pointer">
+                    <div class="checkBoxArea__content cursor-pointer">
+                      <input class="input d-none" type="checkbox" id="customAccess_edit_1" name="customAccess" value="Coupon" checked>
+                      <label class="selectCheckBox mb-0 cursor-pointer" for="customAccess_edit_1"></label>
+                      <label class="label cursor-pointer" for="customAccess_edit_1">lecture</label>
+                    </div>
+                </div> -->
+                <div class=" mb-5">
+                    
+                    <label class="chk-container" for="Check1"> <small id="emailHelp" class="form-text text-muted m-0">Keep me up to date on news and special offers</small>
+                        <input type="checkbox" checked="checked" id="Check1">
+                        <span class="check-mark"></span>
+                    </label>
+                  <!-- <input type="checkbox" class="form-check-input" id="Check1">
+                    <label class="form-check-label align-text-top" for="Check1">
+                        <small id="emailHelp" class="form-text text-muted m-0">Keep me up to date on news and special offers</small>
+                    </label> -->
+                </div>
+                <h5 class="Shipping-addr">Shipping address</h5>
+                <div class="form-row">
+                    
+                    <div class="col-12 col-md mb-2" >
+                      <input type="text" class="form-control form-control-lg" placeholder="Name">
+                    </div>
+                    <div class="col-12 col-md mb-2">
+                      <input type="text" class="form-control form-control-lg" placeholder="Phone">
+                    </div>
+                    
+                </div>
+                <div class="form-row">                   
+                    <div class="form-group col-12 col-md mb-2">                     
+                      <select id="inputCountry" class="custom-select custom-select-lg">
+                        <option selected>Country/Region</option>
+                        <option>Taiwan</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-12 col-md mb-2">
+                        <select id="inputCity" class="custom-select custom-select-lg">
+                            <option selected>City</option>
+                            <option>Taipei</option>
+                            <option>Hualien</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row mb-4 mb-md-5">                    
+                    <div class="col-12" >
+                        <input type="text" class="form-control form-control-lg" placeholder="Address">
+                    </div>  
+                </div>
+                <div class="form-row align-items-center">
+                     <div class="col-12 col-md order-md-2">
+                        <a type="submit" href="product-checkout-2.html" class="btn btn-lg btn-main w-100 font-weight-bold">Continue to payment</a>
+                    </div>
+                    <div class="col-12 col-md text-center text-md-left">
+                        <a href="product-detail.html" class="nav-link text-main py-3 px-0">
+                            <span class="material-icons align-middle">
+                            keyboard_arrow_left
+                            </span>
+                            Return to cart
+                        </a>
+                    </div>
+                   
+                </div>
+            </form>
+        </div>
+        <!-- pay list -->
+        <div class="col-12 col-md-4 order-2 order-md-3">            
+            <ul class="list-unstyled pay-list p-3 p-md-4 collapse d-md-block" id="collapse-pay-list">
+                <li class="mb-3">
+                    <img src="./assets/images/img-1.jpg" alt="">
+                    <div>
+                        <p class="font-weight-bold pl-3">Tatami Cup ×1</p>
+                        <p>NT$1,080</p>
+                    </div>
+                </li>
+                <li class="mb-3">
+                    <img src="./assets/images/img-4.jpg" alt="">
+                    <div>
+                        <p class="font-weight-bold pl-3">Baifan Bowl ×2</p>
+                        <p>NT$3,600</p>
+                    </div>
+                </li>           
+                <li class="border-top pt-3 mb-3">                    
+                    <div>
+                        <p>Subtotal</p>
+                        <p>NT$4,680</p>
+                    </div>
+                </li>
+                <li class="mb-3">                    
+                    <div>
+                        <p>Shipping</p>
+                        <p>NT$80</p>
+                    </div>
+                </li>
+                <li class="mb-3 pt-3 border-top">                    
+                    <div class="font-size-24 font-weight-bold">
+                        <p>Total</p>
+                        <p>NT$4,760</p>
+                    </div>
+                </li>
+            </ul>
+        </div>        
+    </div>
+</section>
+        <!-- 主要內容結束 -->
+        
+    </main>
+    <footer>
+        
+        
+        <section class="footer">
+            <nav class="container d-md-flex navbar-light py-md-5 font-size-14">
+               
+                <div class="row no-gutters w-100 justify-content-center">          
+               
+                    <ul class="nav col-12 col-md-6 flex-column flex-md-row mb-7 mb-md-0 border-top pt-3">                  
+                        <li class="nav-item mr-md-5 mb-3 mb-md-0">
+                            <a class="nav-link p-0" href="#">Purchase Policy</a>
+                        </li>
+                        <li class="nav-item mr-md-5 mb-3 mb-md-0">
+                            <a class="nav-link p-0" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-0" href="#">Terms & Conditions</a>
+                        </li>                        
+                    </ul>
+                    <div class="col-auto col-md-4">
+
+                    </div>             
+                </div>
+            </nav>
+        </section>
+        
+    </footer>
+    <!-- 載入Swiper JS -->
+    <link rel="stylesheet" href="./assets/style/swiper.min.css">
+    <script src="./assets/script/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        
+            slidesPerView: 1.46,
+            spaceBetween: 16,
+            slidesOffsetBefore : 15,
+            
+	        //height: 300,//你的slide高度
+            centeredSlides: false,
+            
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // 設定斷點
+            breakpoints: {
+            640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            },
+            768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            },
+            1024: {
+            // slidesOffsetBefore : 89,
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+            },
+            1280: {
+            slidesOffsetBefore : 89,
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+            },
+            }
+        });
+    </script>
+
+    <!-- W7HW 載入AOS & Animate  -->
+    <style>            
+        [data-aos] {
+            visibility: hidden;
+        }
+    
+        [data-aos].animate__animated {
+            visibility: visible;
+        }
+        /* This changes all the animations globaly */
+    :root {
+      --animate-duration: 1800ms;
+      --animation-delay: 2.9s;
+    }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+                useClassNames: true,
+                initClassName: false,
+                animatedClassName: 'animate__animated'
+                // animatedClassName: 'animated',
+            });
+    </script>    
+</body>
+</html>
