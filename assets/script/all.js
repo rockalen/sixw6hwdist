@@ -178,7 +178,7 @@ var productList = {
                 <img src="${ item.imageUrl[0] }" class="${ imgStyle }">
                 ${ onSale }
                 <div class="card-body text-left p-0 pt-1">                   
-                    <h5 class="card-title mb-1 text-capitalize font-size-md-24">${ item.title }</h5>                    
+                    <h5 class="card-title mb-1 text-capitalize font-size-md-24">${ item.title }</h5>                   
                     <p class="card-text font-size-16">
                     ${ item.content }<br>NT$${ item.price }
                     ${ onSaleDel }
