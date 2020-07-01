@@ -119,3 +119,75 @@ $(document).ready(function () {
 //         $("#navbarNav").addClass("nav-bar");
 //     }   
 // }  );  
+
+
+// axios get data begin
+// var uuid = '1e46f421-bbae-4212-8539-55ea1c5329cf';
+var token = 'mZVBachVGTFQp9pN6KHRJpzMSalHWDRSMKJImYzifGEtXYyOduTR91wqXgXq';
+var apiPath = 'https://course-ec-api.hexschool.io/';
+
+axios.defaults.headers['Authorization'] = `Bearer ${token}`
+
+var productList = {
+    data: {
+      uuid: '1e46f421-bbae-4212-8539-55ea1c5329cf',
+      products: [],
+      appid: 'productList',
+    },
+    getData: function() {
+      var vm = this;
+      var url = `${apiPath}/api/${vm.data.uuid}/ec/products`;
+    // axios非同步api get data
+      axios.get(url)
+        .then(function (response) {
+        vm.data.products = response.data.data;
+        vm.render();
+      })
+    },
+    // 渲染畫面函式
+    render: function() {    
+        var vm = this;
+        var app = document.getElementById(vm.data.appid);
+        var products = vm.data.products;
+        var str = '';
+        products.sort(function (a, b) {
+            return a.options.order > b.options.order ? 1 : -1;
+           });
+       
+        products.forEach(function(item) {
+            var opt = item.options;
+            var imgStyle = '';
+            var onSale = '';
+            var onSaleDel = '';
+            // 判斷自訂義物件option 是否undefined
+            if (opt === undefined){
+                imgStyle = 'card-img';
+            }
+            else{
+                imgStyle = opt.imgStyle;
+                if ( opt.onSale && item.origin_price > item.price ){
+                    onSale = `<div class="card-img-overlay p-3">
+                        <p class="card-text text-right text-white font-size-14 text-capitalize">on sale</p>
+                        </div>`
+                    onSaleDel = `<del class="text-black-50 ml-2">NT$${ item.origin_price }</del>`;                   
+                }               
+            }
+            
+            str += `
+            <div class="card">
+                <img src="${ item.imageUrl[0] }" class="${ imgStyle }">
+                ${ onSale }
+                <div class="card-body text-left p-0 pt-1">                   
+                    <h5 class="card-title mb-1 text-capitalize font-size-md-24">${ item.title }</h5>                    
+                    <p class="card-text font-size-16">
+                    ${ item.content }<br>NT$${ item.price }
+                    ${ onSaleDel }
+                    </p>            
+                </div>
+            </div>`;
+        });
+        app.innerHTML = str;
+        }
+    }
+  
+  productList.getData();
